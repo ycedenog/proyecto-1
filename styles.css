@@ -1,0 +1,15 @@
+.navbar{
+    display: flex;
+    background-color: saddlebrown;
+    justify-content: space-around;
+}
+
+.menu {
+    display: flex;
+    padding: 10px;
+
+}
+
+.slider {
+    display: flex;
+}
