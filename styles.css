@@ -1,15 +1,52 @@
-.navbar{
-    display: flex;
-    background-color: saddlebrown;
-    justify-content: space-around;
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.menu {
+body{
+    background:#000000;
+    color: #ffffff;
+    font-size:20px;
+    font-family: 'Mono Space' monospace;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.nav-main {
+    font-size: 17px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    width: 200px;
+}
+
+.nav-main ul {
+    display:flex;
+}
+
+.nav-main ul li{
     padding: 10px;
-
 }
 
-.slider {
-    display: flex;
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 40px;
 }
