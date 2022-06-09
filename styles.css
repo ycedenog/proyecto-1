@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
+
+:root{
+    --twitter: #55acee;
+    --linkedin: #0077b5;
+    --github: #161414;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +14,7 @@
 }
 
 body{
-    background:#000000;
+    background:coral;
     color: #ffffff;
     font-size:20px;
     font-family: 'Mono Space' monospace;
@@ -40,13 +47,46 @@ ul {
 
 .nav-main ul {
     display:flex;
+
 }
 
 .nav-main ul li{
     padding: 10px;
 }
 
+.nav-main ul li a{
+    padding: 5px;
+}
+
+.nav-main ul li a:hover{
+    background-color: #161833;
+    border-bottom: 3px solid #ffffff;
+}
+
 .nav-main ul.nav-menu {
     flex: 1;
     margin-left: 40px;
+}
+
+footer{
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    background:#111;
+    display: grid;
+}
+
+.main-content {
+    display: flex;
+    background-color: aqua;
+    flex-direction: column;
+}
+
+.content {
+    display: inherit;
+    flex-direction: inherit;
+}
+
+.social-network ul {
+    display: flex;
 }
