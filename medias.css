@@ -1,0 +1,15 @@
+@media only screen and (max-width: 600px) {
+    
+
+    .three-column{
+        width: 100%;
+        max-width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5%;
+        padding: 45px 10px;
+    }
+
+    
+}
