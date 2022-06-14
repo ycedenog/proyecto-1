@@ -105,7 +105,7 @@ body{
     opacity: 0.5;
     border-color: transparent;
     padding: 0.5px 15px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     border-right: 1px solid #fff;
     letter-spacing: 1px;
@@ -281,4 +281,25 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.section-container .container .row .table-container {
+    font-family: 'Roboto Mono', sans-serif;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width:100%
+}
+
+.section-container .container .row .table-container table thead th,td {
+    padding: 15px;
+}
+
+.section-container .container .row .table-container table thead{
+    background-color: #9d9d9d;
+} 
+
+.section-container .container .row .table-container table thead tr:nth-child {
+    background-color: #9d9d9d;
 }
