@@ -1,0 +1,22 @@
+@media only screen and (max-width: 768px){
+    .social-network-bar{
+        flex-direction: column;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+
+    .nav-bar .container .list-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    .nav-bar .container .list-section li a{
+        border-bottom: 0.5px solid #fff;
+        border-right: none;
+    }
+
+}
+
