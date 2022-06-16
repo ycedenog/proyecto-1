@@ -9,6 +9,10 @@
 head{
     display: none;
 }
+
+html{
+    width: 100vw;
+}
 body{
     background-color: #000;
     width: 100%;
@@ -28,6 +32,29 @@ body{
     gap:40px;
 }
 
+.social-network-bar .name-ico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-network-bar .name-ico .ico-i{
+    width: 100%;
+    padding-top: 5px;
+}
+
+.social-network-bar .name-ico .ico-i img{
+    width: 100px;
+    height: 100px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.social-network-bar .name-ico .ico-i img:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition: 1s linear;
+
+}
+
 .social-network-bar h2:hover{
     opacity: 0.5;
     transition: 0.2s linear;
@@ -40,6 +67,7 @@ body{
     font-weight: 500;
     line-height: 26px;
     color: #fff;
+    text-align: center;
 }
 
 .social-network-bar .icon-bar ul{
@@ -109,6 +137,9 @@ body{
     font-weight: 700;
     border-right: 1px solid #fff;
     letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .nav-bar .container .list-section li .contact{
@@ -162,6 +193,8 @@ body{
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    display:flex;
+    flex-direction: column;
 }
 
 .section-container .container .row{
