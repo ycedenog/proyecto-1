@@ -13,10 +13,37 @@
         row-gap: 10px;
     }
 
+    .nav-bar .container .list-section li{
+        text-align: center;
+    }
+
     .nav-bar .container .list-section li a{
         border-bottom: 0.5px solid #fff;
         border-right: none;
     }
 
+    .section-container .container .row .languages-programming .container-languages {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto auto;
+        gap: 30px;
+    }
+
+    .section-container .container .row .table-container {
+        text-align: center;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        column-gap: 50px;
+        row-gap: 50px;
+        flex-direction: column ;
+    }
+
+    .section-container .container .row .table-container table{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0 20px;
+    }
 }
 

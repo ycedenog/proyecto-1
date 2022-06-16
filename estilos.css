@@ -311,11 +311,12 @@ body{
     padding-top: 15px;
 }
 
-.section-container .containter .row .languages-programming .container-languages{
+.section-container .container .row .languages-programming .container-languages {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
 }
 
 .section-container .container .row .languages-programming .container-languages .item-language{
