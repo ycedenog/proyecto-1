@@ -43,7 +43,7 @@
     .section-container .container .row .table-container table{
         margin-left: 20px;
         margin-right: 20px;
-        padding: 0 20px;
+        padding: 0 30px;
     }
 
     .section-container .container .row .principal-content-container{
@@ -53,6 +53,13 @@
 
     .section-container .container .row .principal-content-container .content-biogr p{
         font-size: 15px;
+    }
+
+    .section-container .container .container-extern .form-container .row-form{ 
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
 }
