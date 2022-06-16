@@ -45,5 +45,15 @@
         margin-right: 20px;
         padding: 0 20px;
     }
+
+    .section-container .container .row .principal-content-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-container .container .row .principal-content-container .content-biogr p{
+        font-size: 15px;
+    }
+
 }
 
