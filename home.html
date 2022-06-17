@@ -1,261 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="mediaquerys.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="mediaquerys.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-    <div class="social-network-bar">
-        <div class="name-ico">
-            <h2 class="tittle-name">Yonkani Cedeño</h2>
-            <div class="ico-i">
-                <img src="/img/eldenring.png" alt="">
-            </div>
+  <body>
+    <div class="social-network-bar" id="Home">
+      <div class="name-ico">
+        <h2 class="tittle-name">Yonkani Cedeño</h2>
+        <div class="ico-i">
+          <img src="img/eldenring.png" alt="" />
         </div>
-        
-        <div class="icon-bar">
-            <ul>
-                <li><a href=""><img src="img/iconmonstr-github-1.svg" alt="fa-github"></a></li>
-                <li><a href=""><img src="img/iconmonstr-linkedin-2.svg" alt="fa-github"></a></li>
-                <li><a href=""><img src="img/iconmonstr-twitter-2.svg" alt="fa-github"></a></li>
-            </ul>
-        </div>
+      </div>
+
+      <div class="icon-bar">
+        <ul>
+          <li>
+            <a href="https://github.com/ycedenog"
+              ><img src="img/iconmonstr-github-1.svg" alt="fa-github"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/yonkani-manuel-cede%C3%B1o-garcia-8a4714207/"
+              ><img src="img/iconmonstr-linkedin-2.svg" alt="fa-github"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/yonkanicedeo"
+              ><img src="img/iconmonstr-twitter-2.svg" alt="fa-github"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="nav-bar">
-        <div class="container">
-            <ul class="list-section">
-                <li><a href="#">01 : Home</a></li>
-                <li><a href="#">02 : Projects </a></li>
-                <li><a href="#">03 : About me</a></li>
-                <li><a href="#">04 : Programming Language</a></li>
-                <li><a href="#">05 : Facts</a></li>
-                <li><a class="contact" href="#">06 : Contact</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <ul class="list-section">
+          <li><a href="#Home">01 : Home</a></li>
+          <li><a href="#Projects">02 : Projects </a></li>
+          <li><a href="#About me">03 : About me</a></li>
+          <li><a href="#Language">04 : Programming Language</a></li>
+          <li><a href="#Facts">05 : Facts</a></li>
+          <li><a class="contact" href="#Contact">06 : Contact</a></li>
+        </ul>
+      </div>
     </div>
     <div class="hero-full-container">
-        <img src="img/space.jpg" alt="space">
-        <div class="wrapper-text">
-            <h1>Hola,</h1>
-            <span id="typing-word">Soy Yonkani Cedeño</span>
-        </div>
+      <img src="img/space.jpg" alt="space" />
+      <div class="wrapper-text">
+
+      </div>
     </div>
 
     <div class="section-container">
-        <div class="container">
-            <div class="row">
-                <div class="principal-tittle-container">
-                    <div class="text-center">
-                        <h1>02 : Projects</h1>
-                        <p>En esta sección se presentan los proyectos mas relevantes llevados a cabo durante la carrera
-                            universitaria.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row" id="Projects">
+          <div class="principal-tittle-container">
+            <div class="text-center">
+              <h1>02 : Projects</h1>
+              <p>
+                En esta sección se presentan los proyectos mas relevantes
+                llevados a cabo durante la carrera universitaria.
+              </p>
             </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <figure>
+                <img src="img/python-lexico.png" />
+              </figure>
+              <div class="contenido">
+                <h3>Analizador léxico con Python</h3>
+                <p>
+                  Proyecto enfocado a desarrollar un analizador léxico y
+                  sintáctico de Javascript usando la libreria PLY de Python.
+                </p>
+                
+              </div>
+              <a href="https://github.com/davalbra/ProeyctoLG">Ver más</a>
+            </div>
+
+            <div class="card">
+              <figure>
+                <img src="img/mern.jpg" alt="" />
+              </figure>
+              <div class="contenido">
+                <h3>Stack MERN API</h3>
+                <p>
+                  Proyecto enfocado al uso de MongoDB, Express, React, NodeJS.
+                  Una API que permite consultar, eliminar, actulizar
+                  estudiantes.
+                </p>
+                
+              </div>
+              <a href="https://github.com/ycedenog/Mern-Practice">Ver más</a>
+            </div>
+            <div class="card">
+              <figure>
+                <img src="img/web-scraping.jpg" alt="" />
+              </figure>
+              <div class="contenido">
+                <h3>Web Scrapper</h3>
+                <p>
+                  Desarrollado con la finalidad de extraer datos de sitios web,
+                  analizarlos y obtener responder preguntas de alto nivel.
+                  Escrito en Ruby usando la gema Nokogiri y Python con su
+                  libreria matplotlib.
+                </p>
+                
+              </div>
+              <a href="https://github.com/davalbra/Scraping">Ver más</a>
+            </div>
+            <div class="card">
+              <figure>
+                <img src="img/tictactoe.jpg" alt="" />
+              </figure>
+              <div class="contenido">
+                <h3>Tic Tac Toe</h3>
+                <p>
+                  Proyecto final de estructura de datos donde se implementa el
+                  algoritmo Min-Max para arboles de decisiones. Escrito en Java
+                  y para la realización de interfaz gráfica se uso JavaFx
+                </p>
+                
+              </div>
+              <a href="https://github.com/ycedenog/TicTacToe">Ver más</a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="section-container">
-        <div class="container">
-            <div class="row">
-                <div class="principal-tittle-container">
-                    <div class="text-center">
-                        <h1>03 : About Me</h1>
-                        <p>Aquí se presenta un poco mas en profundidad mis gustos.</p>
-                    </div>
-                </div>
-                <div class="principal-content-container">
-                    <div class="content-biogr">
-                        <h3>Yo</h3>
-                        <p>Tengo 26 años y soy estudiante de Ingenieria en Ciencias Computacionales en ESPOL. Nacido en Guayaquil pero parte de mi colegio viví en El Empalme.</p>
-                        <h3>Gustos</h3>
-                        <p>Amante de los videosjuegos y fiel creyente que Elden Ring es el mejor juego de la historia. Soy lector de filosofía clásica seguidor de la filosofía estoica. El escritor que mas he leido es Stephen King.</p>
-                    </div>
-                    <div class="content-img">
-                        <img src="/img/perfil.jpg" alt="">
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row" id="About me">
+          <div class="principal-tittle-container">
+            <div class="text-center">
+              <h1>03 : About Me</h1>
+              <p>Aquí se presenta un poco mas en profundidad mis gustos.</p>
             </div>
+          </div>
+          <div class="principal-content-container">
+            <div class="content-biogr">
+              <h3>Yo</h3>
+              <p>
+                Tengo 26 años y soy estudiante de Ingenieria en Ciencias
+                Computacionales en ESPOL. Nacido en Guayaquil pero parte de mi
+                colegio viví en El Empalme.
+              </p>
+              <h3>Gustos</h3>
+              <p>
+                Amante de los videosjuegos y fiel creyente que Elden Ring es el
+                mejor juego de la historia. Soy lector de filosofía clásica
+                seguidor de la filosofía estoica. El escritor que mas he leido
+                es Stephen King.
+              </p>
+            </div>
+            <div class="content-img">
+              <img src="img/perfil.jpg" alt="" />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="section-container">
-        <div class="container">
-            <div class="row">
-                <div class="principal-tittle-container">
-                    <div class="text-center">
-                        <h1>04 : Programming Language</h1>
-                        <p>En esta sección se presentan los proyectos mas relevantes llevados a cabo durante la carrera
-                            universitaria.</p>
-                    </div>
-                </div>
-                <div class="languages-programming">
-                    <div class="container-languages">
-                        <div class="item-language">
-                            <img src="/img/python-svg.svg" alt="">
-                        </div>
-                        <div class="item-language">
-                            <img src="/img/java-svg.svg" alt="">
-                        </div>
-                        <div class="item-language">
-                            <img src="/img/mysql-logo.svg" alt="">
-                        </div>
-                        <div class="item-language">
-                            <img src="/img/html-svg.svg" alt="">
-                        </div>
-                        <div class="item-language">
-                            <img src="/img/css-svg.svg" alt="">
-                        </div>
-                        <div class="item-language">
-                            <img src="/img/react-svg.svg" alt="">
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row" id="Language">
+          <div class="principal-tittle-container">
+            <div class="text-center">
+              <h1>04 : Programming Language</h1>
+              <p>
+                En esta sección se presentan los proyectos mas relevantes
+                llevados a cabo durante la carrera universitaria.
+              </p>
             </div>
+          </div>
+          <div class="languages-programming">
+            <div class="container-languages">
+              <div class="item-language">
+                <img src="img/python-svg.svg" alt="" />
+              </div>
+              <div class="item-language">
+                <img src="img/java-svg.svg" alt="" />
+              </div>
+              <div class="item-language">
+                <img src="img/mysql-logo.svg" alt="" />
+              </div>
+              <div class="item-language">
+                <img src="img/html-svg.svg" alt="" />
+              </div>
+              <div class="item-language">
+                <img src="img/css-svg.svg" alt="" />
+              </div>
+              <div class="item-language">
+                <img src="img/react-svg.svg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="section-container">
+      <div class="container">
+        <div class="row" id="Facts">
+          <div class="principal-tittle-container">
+            <div class="text-center">
+              <h1>05 : Facts</h1>
+              <p>
+                Estos son los lenguajes más eficientes en el uso de energía.
+                Además de los lenguajes mas rápidos al momento de ejecutarse.
+              </p>
+            </div>
+          </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Languaje</th>
+                  <th>Energy</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>C</td>
+                <td>1.00</td>
+              </tr>
+              <tr>
+                <td>Rust</td>
+                <td>1.03</td>
+              </tr>
+              <tr>
+                <td>C++</td>
+                <td>1.34</td>
+              </tr>
+              <tr>
+                <td>Ada</td>
+                <td>1.70</td>
+              </tr>
+              <tr>
+                <td>Java</td>
+                <td>1.98</td>
+              </tr>
+              <tr>
+                <td>Pascal</td>
+                <td>2.14</td>
+              </tr>
+              <tr>
+                <td>Chapel</td>
+                <td>2.18</td>
+              </tr>
+              <tr>
+                <td>Lisp</td>
+                <td>2.27</td>
+              </tr>
+            </table>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Languaje</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>C</td>
+                <td>1.00</td>
+              </tr>
+              <tr>
+                <td>Rust</td>
+                <td>1.04</td>
+              </tr>
+              <tr>
+                <td>C++</td>
+                <td>1.56</td>
+              </tr>
+              <tr>
+                <td>Ada</td>
+                <td>1.85</td>
+              </tr>
+              <tr>
+                <td>Java</td>
+                <td>1.89</td>
+              </tr>
+              <tr>
+                <td>Go</td>
+                <td>2.83</td>
+              </tr>
+              <tr>
+                <td>Pascal</td>
+                <td>3.02</td>
+              </tr>
+              <tr>
+                <td>Ocaml</td>
+                <td>3.09</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="section-container">
         <div class="container">
-            <div class="row">
-                <div class="principal-tittle-container">
-                    <div class="text-center">
-                        <h1>05 : Facts</h1>
-                        <p>Estos son los lenguajes más eficientes en el uso de energía. Además de los lenguajes mas
-                            rápidos al momento de ejecutarse.</p>
-                    </div>
-                </div>
-                <div class="table-container">
-
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Languaje</th>
-                                <th>Energy</th>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td>C</td>
-                            <td>1.00</td>
-                        </tr>
-                        <tr>
-                            <td>Rust</td>
-                            <td>1.03</td>
-                        </tr>
-                        <tr>
-                            <td>C++</td>
-                            <td>1.34</td>
-                        </tr>
-                        <tr>
-                            <td>Ada</td>
-                            <td>1.70</td>
-                        </tr>
-                        <tr>
-                            <td>Java</td>
-                            <td>1.98</td>
-                        </tr>
-                        <tr>
-                            <td>Pascal</td>
-                            <td>2.14</td>
-                        </tr>
-                        <tr>
-                            <td>Chapel</td>
-                            <td>2.18</td>
-                        </tr>
-                        <tr>
-                            <td>Lisp</td>
-                            <td>2.27</td>
-                        </tr>
-                    </table>
-
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Languaje</th>
-                                <th>Time</th>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td>C</td>
-                            <td>1.00</td>
-                        </tr>
-                        <tr>
-                            <td>Rust</td>
-                            <td>1.04</td>
-                        </tr>
-                        <tr>
-                            <td>C++</td>
-                            <td>1.56</td>
-                        </tr>
-                        <tr>
-                            <td>Ada</td>
-                            <td>1.85</td>
-                        </tr>
-                        <tr>
-                            <td>Java</td>
-                            <td>1.89</td>
-                        </tr>
-                        <tr>
-                            <td>Go</td>
-                            <td>2.83</td>
-                        </tr>
-                        <tr>
-                            <td>Pascal</td>
-                            <td>3.02</td>
-                        </tr>
-                        <tr>
-                            <td>Ocaml</td>
-                            <td>3.09</td>
-                        </tr>
-                    </table>
-                </div>
+          <div class="row" id="Contact">
+            <div class="principal-tittle-container">
+              <div class="text-center">
+                <h1>06 : Contact</h1>
+                <p>Información de contacto.</p>
+              </div>
             </div>
-        </div>
-        <div class="section-container">
-            <div class="container">
-                <div class="row">
-                    <div class="principal-tittle-container">
-                        <div class="text-center">
-                            <h1>06 : Contact</h1>
-                            <p>Información de contacto.</p>
-                        </div>
-                    </div>
+          </div>
+          <div class="container-extern">
+            <div class="form-container">
+              <div class="row-form">
+                <div class="col">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Subject"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      rows="5"
+                      class="form-control"
+                      placeholder="Enter your message"
+                    />
+                  </div>
+                  <button type="submit" class="btn-sbm">Send</button>
                 </div>
-                <div class="container-extern">
-                    <div class="form-container">
-                        <div class="row-form">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject">
-                                </div>
-                                <div class="form-group">
-                                    <input rows="5" class="form-control" placeholder="Enter your message">
-                                </div>
-                                <button type="submit" class="btn-sbm">Send</button>
-                            </div>
-                            <div class="map-container">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3352.6735327933766!2d-79.9680912239156!3d-2.1447919437607563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1655211914089!5m2!1ses!2sec"
-                                    width="250px" height="250px" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                    </div>
+                <div class="map-container">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3352.6735327933766!2d-79.9680912239156!3d-2.1447919437607563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1655211914089!5m2!1ses!2sec"
+                    width="440px"
+                    height="440px"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
-
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <audio src="/rsc/Elden Ring OST - Elden Ring.mp3"  ></audio>
-
-
-</body>
-
+    <audio
+      src="rsc/Elden Ring OST - Elden Ring.mp3"
+      autoplay=""
+      loop=""
+    ></audio>
+  </body>
 </html>
