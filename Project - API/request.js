@@ -1,24 +1,24 @@
 //https://metmuseum.github.io/
 
 //Retorna un array con los ID disponibles de los objectos
-const validID = function (){
-    let response = fetch("https://collectionapi.metmuseum.org/public/collection/v1/objects")
+function validID(){
+    return fetch("https://collectionapi.metmuseum.org/public/collection/v1/objects")
     .then(response => response.json())
     .then(data => {
         //Retorna un object 
         return data.objectIDs;
     }) 
     .catch(err => console.error(err))
-    return response
 }
+
 
 //Retorna un registro para un objeto pasandose como parametro el ID
 //Crea la ruta para obtener el registro.
 function getObjectByID(objectID){
     let pathObject = "https://collectionapi.metmuseum.org/public/collection/v1/objects/" + objectID
-    //console.log(pathObject);
 
-    fetch(pathObject)
+    // Retorna una promesa 
+    return fetch(pathObject)
     .then(response => response.json())
     .then(data => {
         //Se creara el objeto con los campos necesarios
@@ -48,8 +48,15 @@ function getObjectByID(objectID){
     .catch(err => console.error(err))
 }
 
-let saveObjects = function (){
-   console.log(validID().keys())
+async function saveObjects(){
+    let arrayID = await validID();
+    let allObjects = []
+    for ( let i = 0; i< 30 ; i++){
+        console.log(arrayID[i])
+        let _Object = await getObjectByID(arrayID[i]);
+        allObjects.push(_Object)
+    }
+    return console.log(allObjects[1]);
 }
 
 
@@ -67,5 +74,4 @@ function getAllObjectsByBeginDate(paramBeginDate){
     console.log(counter)
 }
 
-validID()
-saveObjects()
+saveObjects();
