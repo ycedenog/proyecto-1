@@ -49,17 +49,17 @@ function getObjectByID(objectID){
 }
 
 async function saveObjects(){
-    let arrayID = await validID();
+    //let arrayID = await validID(); // Funcion asincrona que recupera 488k de ID 
     let allObjects = []
-    for ( let i = 0; i< 30 ; i++){
-        console.log(arrayID[i])
-        let _Object = await getObjectByID(arrayID[i]);
+    for ( let i = 900; i< 1001 ; i++){
+        let _Object = await getObjectByID(i);
         allObjects.push(_Object)
     }
-    return console.log(allObjects[1]);
+    localStorage.setItem("artWorks", JSON.stringify(allObjects))
+    return console.log(allObjects);
 }
 
-
+// Obtiene un filtrado de obras de arte por fecha en la que comenzo hacerse.
 function getAllObjectsByBeginDate(paramBeginDate){
     let counter = 0;
     fetch("https://collectionapi.metmuseum.org/public/collection/v1/objects")
@@ -74,4 +74,8 @@ function getAllObjectsByBeginDate(paramBeginDate){
     console.log(counter)
 }
 
+function filterArtWorks(country){
+    let local = JSON.parse(localStorage.getItem("artWorks"));
+}
 saveObjects();
+filterArtWorks();
