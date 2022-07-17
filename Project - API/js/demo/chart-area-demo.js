@@ -461,7 +461,6 @@ document.getElementById('tabla').addEventListener('change', (evt) => {
 
 
 validID();
-getCurrentIdObjects();
 saveObjects();
 filterCountry();
 filterDate()
@@ -472,3 +471,4 @@ fillOptionTable();
 filterCulture();
 fillTable();
 showTotalObjects();
+getCurrentIdObjects();
