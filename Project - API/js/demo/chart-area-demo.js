@@ -134,6 +134,12 @@ function validID() {
     .catch(err => console.error(err))
 }
 
+async function showTotalObjects() {
+  let totalObjects = await validID()
+  let areaTotalObjects = document.getElementById('quantity-objects')
+  areaTotalObjects.innerHTML = totalObjects.length
+}
+
 
 //Retorna un registro para un objeto pasandose como parametro el ID
 //Crea la ruta para obtener el registro.
@@ -186,6 +192,12 @@ async function saveObjects() {
   localStorage.setItem("artWorks", JSON.stringify(allObjects))
   container.style.visibility = 'hidden';
   container.style.opacity = '0'
+}
+
+function getCurrentIdObjects() {
+  let local = JSON.parse(localStorage.getItem("artWorks"))
+  let labelID = document.getElementById('quantity-id-used')
+  labelID.innerHTML = local[0].objectID + " - " + local[local.length - 1].objectID
 }
 
 
@@ -448,7 +460,8 @@ document.getElementById('tabla').addEventListener('change', (evt) => {
 })
 
 
-
+validID();
+getCurrentIdObjects();
 saveObjects();
 filterCountry();
 filterDate()
@@ -458,3 +471,4 @@ fillOptionCharts();
 fillOptionTable();
 filterCulture();
 fillTable();
+showTotalObjects();
